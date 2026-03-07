@@ -2,4 +2,4 @@
 
 <img width="805" height="600" alt="medals_by_country" src="https://github.com/user-attachments/assets/b1fe73e1-d538-4ec3-b28e-a717cd0e8bf8" />
 
-[Link]([https://www.google.com](https://bruzza-sb.github.io/infovis/))
+[Link](https://bruzza-sb.github.io/infovis/)
