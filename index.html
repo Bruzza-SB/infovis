@@ -1,26 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Infovis - Santiago Bruzza</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="icon" type="image/png" href="https://github.com/user-attachments/assets/78b8a583-df77-443b-9b51-a02d65bc1e0e">
 </head>
-<body>
-  <img width="300" height="186" alt="itba_logo" src="https://github.com/user-attachments/assets/78b8a583-df77-443b-9b51-a02d65bc1e0e" />
-  <h1>Infovis - Santiago Bruzza</h1>
-  <hr>
-  <h1>Raw Graph - Olimpic Medals by country</h1>
-  <object type="image/svg+xml" data="./medals_by_country.svg"></object>
-  <hr>
-  <h1>Raw Graph - Infovis Bigrams</h1>
-  <object type="image/svg+xml" data="./infoviz_bigrams.svg"></object>
-  <hr>
-  <h1>Flourish - Nightingale dataset</h1>
-  <div class="flourish-embed flourish-chart" data-src="visualisation/27939216"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/27939216/thumbnail" width="100%" alt="visualization" /></noscript></div>
-  <hr>
-  <h1>Datawrapper - Men vs women: pizza topping choices.</h1>
-  <div style="min-height:458px" id="datawrapper-vis-964Vy"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/964Vy/embed.js" charset="utf-8" data-target="#datawrapper-vis-964Vy"></script><noscript><img src="https://datawrapper.dwcdn.net/964Vy/full.png" alt="Men vs women (Range Plot)" /></noscript></div>
-  <hr>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center gap-6">
+      <img class="w-32" src="https://github.com/user-attachments/assets/78b8a583-df77-443b-9b51-a02d65bc1e0e" alt="ITBA logo">
+      <div>
+        <h1 class="text-3xl font-bold">Information Visualization</h1>
+        <p class="text-gray-600">Santiago Bruzza — Data Visualization Projects</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="max-w-6xl mx-auto px-6 py-10 space-y-10">
+
+    <!-- Graph 1 -->
+    <section class="bg-white rounded-2xl shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">
+        Raw Graph — Olympic Medals by Country
+      </h2>
+
+      <div class="border rounded-lg p-4 bg-gray-50">
+        <object type="image/svg+xml" data="./medals_by_country.svg" class="w-full"></object>
+      </div>
+    </section>
+
+    <!-- Graph 2 -->
+    <section class="bg-white rounded-2xl shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">
+        Raw Graph — Infovis Bigrams
+      </h2>
+
+      <div class="border rounded-lg p-4 bg-gray-50">
+        <object type="image/svg+xml" data="./infoviz_bigrams.svg" class="w-full"></object>
+      </div>
+    </section>
+
+    <!-- Flourish -->
+    <section class="bg-white rounded-2xl shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">
+        Flourish — Nightingale Dataset
+      </h2>
+
+      <div class="border rounded-lg p-4 bg-gray-50">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/27939216">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+          <noscript>
+            <img src="https://public.flourish.studio/visualisation/27939216/thumbnail" width="100%" alt="visualization" />
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- Datawrapper -->
+    <section class="bg-white rounded-2xl shadow p-6">
+      <h2 class="text-xl font-semibold mb-4">
+        Datawrapper — Men vs Women: Pizza Topping Choices
+      </h2>
+
+      <div class="border rounded-lg p-4 bg-gray-50">
+        <div style="min-height:458px" id="datawrapper-vis-964Vy">
+          <script 
+            type="text/javascript" 
+            defer 
+            src="https://datawrapper.dwcdn.net/964Vy/embed.js" 
+            charset="utf-8" 
+            data-target="#datawrapper-vis-964Vy">
+          </script>
+
+          <noscript>
+            <img src="https://datawrapper.dwcdn.net/964Vy/full.png" alt="Men vs women (Range Plot)" />
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    © 2026 Santiago Bruzza — Information Visualization — ITBA
+  </footer>
+
 </body>
 </html>
