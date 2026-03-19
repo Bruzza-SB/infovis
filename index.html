@@ -42,6 +42,7 @@ scroll-behavior:smooth;
         <a href="#nightingale" class="block px-4 py-2 hover:bg-gray-100">Nightingale Dataset</a>
         <a href="#listings" class="block px-4 py-2 hover:bg-gray-100">Airbnb Listings in Buenos Aires</a>
         <a href="#season_ranking" class="block px-4 py-2 hover:bg-gray-100">Season Ranking</a>
+        <a href="#km_by_day_type" class="block px-4 py-2 hover:bg-gray-100">Km por tipo de día</a>
     </div>
 </div>
 
@@ -51,94 +52,108 @@ scroll-behavior:smooth;
 <!-- CONTENT -->
 <main class="max-w-6xl mx-auto px-6 py-10 space-y-16">
 
-<section id="medals" class="bg-white rounded-2xl shadow p-6">
-    <h2 class="text-xl font-semibold mb-4">
-    Raw Graph — Olympic Medals by Country
-    </h2>
-
-    <div class="border rounded-lg p-4 bg-gray-50 flex justify-center">
-        <img src="./medals_by_country.svg" class="max-w-full h-auto">
-    </div>
-</section>
-
-<section id="bigrams" class="bg-white rounded-2xl shadow p-6">
-    <h2 class="text-xl font-semibold mb-4">
-    Raw Graph — Infovis Bigrams
-    </h2>
-
-    <div class="border rounded-lg p-4 bg-gray-50 flex justify-center">
-    <img src="./infoviz_bigrams.svg" class="max-w-full h-auto">
-    </div>
-</section>
-
-<section id="nightingale" class="bg-white rounded-2xl shadow p-6">
-    <h2 class="text-xl font-semibold mb-4">
-    Flourish — Nightingale Dataset
-    </h2>
-
-    <div class="border rounded-lg p-4 bg-gray-50">
-    <div class="flourish-embed flourish-chart" data-src="visualisation/27939216">
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
-    <noscript>
-    <img src="https://public.flourish.studio/visualisation/27939216/thumbnail" width="100%">
-    </noscript>
-    </div>
-    </div>
-</section>
-
-<section id="pizza" class="bg-white rounded-2xl shadow p-6">
-    <h2 class="text-xl font-semibold mb-4">
-    Datawrapper — Men vs Women: Pizza Topping Choices
-    </h2>
-
-    <div class="border rounded-lg p-4 bg-gray-50">
-        <div style="min-height:458px" id="datawrapper-vis-964Vy">
-            <script
-            type="text/javascript"
-            defer
-            src="https://datawrapper.dwcdn.net/964Vy/embed.js"
-            charset="utf-8"
-            data-target="#datawrapper-vis-964Vy">
-            </script>
-
-            <noscript>
-            <img src="https://datawrapper.dwcdn.net/964Vy/full.png">
-            </noscript>
+    <section id="medals" class="bg-white rounded-2xl shadow p-6">
+        <h2 class="text-xl font-semibold mb-4">
+        Raw Graph — Olympic Medals by Country
+        </h2>
+    
+        <div class="border rounded-lg p-4 bg-gray-50 flex justify-center">
+            <img src="./medals_by_country.svg" class="max-w-full h-auto">
         </div>
-    </div>
-</section>
-
-<section id="listings" class="bg-white rounded-2xl shadow p-6">
-    <h2 class="text-xl font-semibold mb-4">
-    Tableau - Airbnb - Listings in Buenos Aires
-    </h2>
-
-    <div class="border rounded-lg p-4 bg-gray-50">
-        <div style="min-height:458px" id="datawrapper-vis-964Vy">
-            <div class='tableauPlaceholder' id='viz1773502352380' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sb&#47;sb_info_vis&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;sb_info_vis&#47;Dashboard1?:language=es-ES&amp;:embed=true&amp;publish=yes&amp;:sid=&amp;:redirect=auth' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sb&#47;sb_info_vis&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1773502352380');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1627px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </section>
+    
+    <section id="bigrams" class="bg-white rounded-2xl shadow p-6">
+        <h2 class="text-xl font-semibold mb-4">
+        Raw Graph — Infovis Bigrams
+        </h2>
+    
+        <div class="border rounded-lg p-4 bg-gray-50 flex justify-center">
+        <img src="./infoviz_bigrams.svg" class="max-w-full h-auto">
         </div>
-    </div>
-</section>
-
-<section id="season_ranking" class="bg-white rounded-2xl shadow p-6">
-    <h2 class="text-xl font-semibold mb-4">
-    ¿En qué estación del año camino más? ¿cambió con el tiempo?
-    </h2>
-    <div class="border rounded-lg p-4 bg-gray-50 flex justify-center">
-        <img src="./km_season_ranking.svg" class="max-w-full h-auto">
-    </div>
-</section>
+    </section>
+    
+    <section id="nightingale" class="bg-white rounded-2xl shadow p-6">
+        <h2 class="text-xl font-semibold mb-4">
+        Flourish — Nightingale Dataset
+        </h2>
+    
+        <div class="border rounded-lg p-4 bg-gray-50">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/27939216">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+        <noscript>
+        <img src="https://public.flourish.studio/visualisation/27939216/thumbnail" width="100%">
+        </noscript>
+        </div>
+        </div>
+    </section>
+    
+    <section id="pizza" class="bg-white rounded-2xl shadow p-6">
+        <h2 class="text-xl font-semibold mb-4">
+        Datawrapper — Men vs Women: Pizza Topping Choices
+        </h2>
+    
+        <div class="border rounded-lg p-4 bg-gray-50">
+            <div style="min-height:458px" id="datawrapper-vis-964Vy">
+                <script
+                type="text/javascript"
+                defer
+                src="https://datawrapper.dwcdn.net/964Vy/embed.js"
+                charset="utf-8"
+                data-target="#datawrapper-vis-964Vy">
+                </script>
+    
+                <noscript>
+                <img src="https://datawrapper.dwcdn.net/964Vy/full.png">
+                </noscript>
+            </div>
+        </div>
+    </section>
+    
+    <section id="listings" class="bg-white rounded-2xl shadow p-6">
+        <h2 class="text-xl font-semibold mb-4">
+        Tableau - Airbnb - Listings in Buenos Aires
+        </h2>
+    
+        <div class="border rounded-lg p-4 bg-gray-50">
+            <div style="min-height:458px" id="datawrapper-vis-964Vy">
+                <div class='tableauPlaceholder' id='viz1773502352380' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sb&#47;sb_info_vis&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;sb_info_vis&#47;Dashboard1?:language=es-ES&amp;:embed=true&amp;publish=yes&amp;:sid=&amp;:redirect=auth' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sb&#47;sb_info_vis&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1773502352380');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1627px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+        </div>
+    </section>
+    
+    <section id="season_ranking" class="bg-white rounded-2xl shadow p-6">
+        <h2 class="text-xl font-semibold mb-4">
+        ¿En qué estación del año camino más? ¿cambió con el tiempo?
+        </h2>
+        <div class="border rounded-lg p-4 bg-gray-50 flex justify-center">
+            <img src="./km_season_ranking.svg" class="max-w-full h-auto">
+        </div>
+    </section>
+    
+    <section id="km_by_day_type" class="bg-white rounded-2xl shadow p-6">
+        <h2 class="text-xl font-semibold mb-4">
+        En 2022 comencé a trabajar 100% ¿camino menos en la semana?
+        </h2>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/28130515">
+                <script src="https://public.flourish.studio/resources/embed.js">
+                </script>
+                <noscript>
+                    <img src="https://public.flourish.studio/visualisation/28130515/thumbnail" width="100%" alt="visualization" />
+                </noscript>
+            </div>
+        </div>
+    </section>
 
 </main>
 
 <footer class="text-center py-6 text-gray-500 text-sm">
-© 2026 Santiago Bruzza — Information Visualization — ITBA
+    © 2026 Santiago Bruzza — Information Visualization — ITBA
 </footer>
 
 <script>
-function toggleMenu(){
-document.getElementById("chartMenu").classList.toggle("hidden");
-}
+    function toggleMenu(){
+    document.getElementById("chartMenu").classList.toggle("hidden");
+    }
 </script>
 
 </body>
