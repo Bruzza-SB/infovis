@@ -33,18 +33,16 @@ scroll-behavior:smooth;
 
 <!-- SINGLE DRILLDOWN BUTTON -->
 <div class="relative">
-<button onclick="toggleMenu()" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg font-medium">
-Charts ▼
-</button>
-
-<div id="chartMenu" class="hidden absolute right-0 mt-2 w-56 bg-white border rounded-lg shadow-lg">
-
-<a href="#medals" class="block px-4 py-2 hover:bg-gray-100">Olympic Medals</a>
-<a href="#bigrams" class="block px-4 py-2 hover:bg-gray-100">Infovis Bigrams</a>
-<a href="#nightingale" class="block px-4 py-2 hover:bg-gray-100">Nightingale Dataset</a>
-<a href="#listings" class="block px-4 py-2 hover:bg-gray-100">Airbnb Listings in Buenos Aires</a>
-
-</div>
+    <button onclick="toggleMenu()" class="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded-lg font-medium">
+    Charts ▼
+    </button>
+    <div id="chartMenu" class="hidden absolute right-0 mt-2 w-56 bg-white border rounded-lg shadow-lg">
+        <a href="#medals" class="block px-4 py-2 hover:bg-gray-100">Olympic Medals</a>
+        <a href="#bigrams" class="block px-4 py-2 hover:bg-gray-100">Infovis Bigrams</a>
+        <a href="#nightingale" class="block px-4 py-2 hover:bg-gray-100">Nightingale Dataset</a>
+        <a href="#listings" class="block px-4 py-2 hover:bg-gray-100">Airbnb Listings in Buenos Aires</a>
+        <a href="#season_ranking" class="block px-4 py-2 hover:bg-gray-100">Season Ranking</a>
+    </div>
 </div>
 
 </div>
@@ -122,7 +120,7 @@ Charts ▼
     </div>
 </section>
 
-<section id="listings" class="bg-white rounded-2xl shadow p-6">
+<section id="season_ranking" class="bg-white rounded-2xl shadow p-6">
     <h2 class="text-xl font-semibold mb-4">
     ¿En qué estación del año camino más? ¿cambió con el tiempo?
     </h2>
